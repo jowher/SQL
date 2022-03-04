@@ -29,6 +29,8 @@ Output:
 +---------------------+
 
 ANSWER:
-#approach1:  Select max(salary) from Employee where salary < (Select max(salary) from Employee);
+#approach1:  
+Select max(salary) from Employee where salary < (Select max(salary) from Employee);
 
-#approach2: Select max(E1.salary) as SecondHighestSalary from Employee E1 Join Employee E2 on E1.salary < E2.salary
+#approach2: 
+Select max(E1.salary) as SecondHighestSalary from Employee E1 Join Employee E2 on E1.salary < E2.salary
